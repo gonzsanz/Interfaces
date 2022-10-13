@@ -1,0 +1,110 @@
+* {
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+}
+
+figure {
+    max-width: 100%;
+    height: auto;
+    background-color: hsl(163, 18%, 32%);
+    color: hsl(0, 0%, 100%);
+    padding: 2rem;
+}
+
+header>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: hsl(104, 66%, 74%);
+}
+
+.inline {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header>ul>li {
+    display: inline;
+    background-color: hsl(163, 18%, 32%);
+    color: hsl(0, 0%, 100%);
+    padding: 2rem;
+}
+
+p {
+    background-color: hsl(163, 18%, 32%);
+    color: hsl(0, 0%, 100%);
+    padding: 2rem;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    background-color: hsl(85, 100%, 78%);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex: 1 1 20%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    background-color: hsl(140, 18%, 54%);
+    display: flex;
+}
+
+.derecha {
+    background-color: hsl(140, 18%, 54%);
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+nav>li {
+    background-color: hsl(85, 100%, 78%);
+    padding: 1rem;
+    margin: 2rem;
+    width: 10rem;
+    text-align: center;
+    list-style: none;
+}
+
+.menu {
+    background-color: hsl(140, 18%, 54%);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.menu>nav>li {
+    background-color: hsl(85, 100%, 78%);
+    padding: 1rem;
+    margin: 2rem;
+    width: 10rem;
+    text-align: center;
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: hsl(104, 66%, 74%);
+    padding: 1rem;
+}
+
+label {
+    background-color: hsl(163, 18%, 32%);
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+}

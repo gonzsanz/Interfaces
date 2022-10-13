@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Philosopher';
+    src: url(fonts/Philosopher.ttf);
+}
+
+
+body {
+    background-color: blanchedalmond;
+
+}
+
+.logo {
+    width: 20rem;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+header>div {
+    display: flex;
+    gap: 20%;
+    align-items: flex-start;
+    border: 5px dashed darkblue;
+    border-radius: 15px;
+    background-color: aquamarine;
+    font-family: 'Philosopher';
+}
+
+nav {
+    border: 2px solid cornflowerblue;
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+img {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+
+main {
+    display: flex;
+}
+
+
+
+footer {
+    border: 2px solid cornflowerblue;
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.listas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*poner el div profes debajo de los divs de las asignaturas*/
+.profes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
