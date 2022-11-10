@@ -1,0 +1,228 @@
+/* Importar fuentes */
+
+@font-face {
+    font-family: 'Gogoia';
+    src: url(../fonts/Gogoia.otf);
+
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins.ttf);
+
+}
+
+
+body {
+    font-style: none;
+    background-image: url(../img/wallpaper2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    gap: 1rem;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+
+nav {
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+header {
+    grid-area: header;
+    max-height: 4rem;
+
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    font-family: 'Gogoia';
+    grid-area: main;
+    margin: 0;
+}
+
+.nombre {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.nombre>p:first-child {
+    margin-bottom: 10px;
+}
+
+.nombre>p:nth-child(3) {
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+hr {
+    width: 28rem;
+    background-color: #fff;
+    margin: 0;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+.imagen {
+    border-radius: 200px;
+    box-shadow: inset 1px 1px 40px -20px rgba(209, 209, 209, 1);
+    transition: transform 1s;
+}
+
+.imagen:hover {
+    transform: scale(.8);
+}
+
+footer {
+    font-family: 'Poppins';
+    grid-area: footer;
+    display: flex;
+    background-color: #fff;
+    height: 1.5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin: 0;
+    color: #000;
+}
+
+/*------------------------ANIMACION PARA HEADER ------------------------ */
+.nav a {
+    padding: .8em;
+    color: #ffffff80;
+    position: relative;
+}
+
+.nav a::before,
+.nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid lightblue;
+    border-right: 3px solid lightblue;
+    transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid lightblue;
+    border-left: 3px solid lightblue;
+    transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.nav a:hover {
+    color: lightblue;
+}
+
+/*------------------------ANIMACION PARA TEXTO NOMBRE ------------------------ */
+.nombre {
+    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+}
+
+@keyframes reveal {
+    80% {
+        letter-spacing: 8px;
+    }
+
+    100% {
+        background-size: 300% 300%;
+    }
+}
+
+
+@keyframes glow {
+    40% {
+        text-shadow: 0 0 8px #fff;
+    }
+}
+
+
+@media (max-width: 500px) {
+    body {
+        flex-wrap: wrap;
+    }
+
+    .imagen {
+        display: none;
+    }
+
+    .nombre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        grid-area: footer;
+        align-self: flex-end;
+        position: fixed;
+        bottom: 0;
+    }
+}

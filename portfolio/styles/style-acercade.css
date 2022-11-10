@@ -1,0 +1,139 @@
+/*------------------------ IMPORTAR FUENTES ------------------------ */
+@font-face {
+    font-family: 'Gogoia';
+    src: url(../fonts/Gogoia.otf);
+
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins.ttf);
+
+}
+
+/*------------------------ AÑADIR GRID ------------------------ */
+body {
+    font-style: none;
+    background-image: url(../img/wallpaper2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 4rem auto 2rem;
+    grid-template-columns: auto 2fr;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+/*------------------------ CSS PARA HEADER ------------------------ */
+header {
+    display: flex;
+    align-items: center;
+    grid-area: header;
+    max-height: 4rem;
+}
+
+.logo {
+    display: flex;
+    width: 50px;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+/*------------------------ CSS PARA ASIDE ------------------------ */
+aside {
+    grid-area: aside;
+    display: flex;
+}
+
+.nav {
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    margin-top: 7rem;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff80;
+}
+
+.nav a:hover {
+    color: lightblue;
+    animation: glow 1500ms linear infinite;
+}
+
+.vertical {
+    display: flex;
+    height: 20rem;
+    width: 1px;
+    border-width: 0;
+    color: #ffffff80;
+    background-color: #ffffff80;
+    margin-left: 1rem;
+    margin-top: 7rem;
+    background-image: linear-gradient(to bottom, #ffffff80, #333);
+}
+
+/*------------------------ CSS PARA MAIN ------------------------ */
+main {
+    grid-area: main;
+}
+
+.indice {
+    display: flex;
+    justify-content: center;
+    font-family: 'Gogoia';
+    font-size: 5rem;
+    color: white;
+    animation: glow 2500ms linear infinite;
+}
+
+@keyframes glow {
+    40% {
+        text-shadow: 0 0 8px #fff;
+    }
+}
+
+hr {
+    margin-top: 0;
+    background-color: #ffffff80;
+    color: #ffffff80;
+    width: 62rem;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to left, #333, #ccc);
+}
+
+/*------------------------ CSS PARA FOOTER ------------------------ */
+footer {
+    font-family: 'Poppins';
+    grid-area: footer;
+    display: flex;
+    background-color: #fff;
+    height: 1.5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin: 0;
+    color: #000;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: #fff;
+
+}
