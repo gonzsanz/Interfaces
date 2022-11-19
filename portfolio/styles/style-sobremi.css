@@ -17,20 +17,28 @@ h3 {
 }
 
 /*------------------------ MEDIA QUERIES ------------------------ */
+/* TABLET */
 
-/* MOBILE */
-@media all and (max-width: 767px) {
 
-    h3{
+@media all and (max-width: 992px) {
+    h3 {
         margin: 0;
         text-align: center;
         font-size: 2rem;
     }
+
     .parrafo {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        font-size: 1.3rem;
+        font-size: 2rem;
         margin: 10px;
+    }
+}
+
+/* MOBILE */
+@media all and (max-width: 767px) {
+    .parrafo {
+        font-size: 1.3rem;
     }
 }

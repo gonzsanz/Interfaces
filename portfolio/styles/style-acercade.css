@@ -23,3 +23,63 @@ iframe {
     border: 3px solid #ffffff80;
     border-radius: 25px;
 }
+
+.boton {
+    display: none;
+}
+
+/*------------------------ MEDIA QUERIES ------------------------ */
+/* TABLET */
+
+@media all and (max-width: 992px) {
+    iframe {
+        display: none;
+    }
+
+    .boton {
+        font-family: 'Poppins';
+        display: flex;
+        font-size: 20px;
+        width: 6rem;
+        height: 2rem;
+        margin-bottom: 40px;
+        margin-left: 6rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        background-color: #ffffff80;
+        padding: 10px;
+    }
+
+    .boton>a {
+        color: #000;
+        font-weight: bold;
+    }
+
+    .parrafo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 1.6rem;
+        margin: 10px;
+    }
+
+}
+
+/* MOBILE */
+@media all and (max-width: 767px) {
+
+    .parrafo {
+        font-size: 1.3rem;
+    }
+
+    .boton {
+        margin-left: 5rem;
+        width: 6rem;
+        height: 2rem;
+        padding: 6px;
+    }
+
+
+
+}

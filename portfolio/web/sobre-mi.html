@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Gonzalez</title>
+    <!-- ENLAZADOS -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/style-sobremi.css">
-    <link rel="stylesheet" href="../styles/plantilla.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-
 </head>
 
 <body>
+
     <header>
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <a href="../index.html">
+            <img src="../img/logo_claro.png" alt="imagen del logo" class="logo">
+        </a>
+    </header>
 
-            <button class="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <a href="../index.html">
-                <img src="../img/logo_claro.png" alt="imagen del logo" class="logo">
-            </a>
-
-      </header>
     <aside>
         <nav>
             <ul class="nav">
@@ -37,11 +37,10 @@
         </nav>
         <hr class="vertical">
     </aside>
+
     <main>
         <div class="indice">SOBRE MÍ</div>
-
         <hr>
-
         <div class="texto">
             <h3>Mundo profesional</h3>
             <div class="parrafo">
@@ -57,8 +56,9 @@
             </div>
         </div>
     </main>
+
     <footer>
-        <p>&#169 David González Sanz</p>
+        <p>&#169; David González Sanz</p>
         <div class="svg">
             <a href="https://github.com/gonzsanz" target="_blank"><img src="../img/svg/github.svg" alt="github"></a>
             <a href="https://www.linkedin.com/in/davidgonzalez02/" target="_blank"><img src="../img/svg/linkedin.svg"
@@ -66,13 +66,9 @@
             <a href="mailto:davidgonzsanz02@gmail.com" target="_blank"><img src="../img/svg/mail.svg" alt="mail"></a>
         </div>
     </footer>
-    <script>
-        const navToggle = document.querySelector(".nav-toggle")
-        const nav = document.querySelector(".nav")
-        navToggle.addEventListener("click", () => {
-            nav.classList.toggle("nav_visible")
-        })
-    </script>
+
+    <script src="../app/app.js"></script>
+
 </body>
 
 </html>

@@ -24,5 +24,22 @@
 .cards .tarjeta img {
     width: 320px;
     height: 220px;
-    
+
+}
+
+/*------------------------ MEDIA QUERIES ------------------------ */
+
+/* TABLET */
+
+@media all and (max-width: 992px) {
+
+    .indice {
+        margin: 0;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
 }
