@@ -17,9 +17,8 @@ h3 {
 }
 
 /*------------------------ MEDIA QUERIES ------------------------ */
+
 /* TABLET */
-
-
 @media all and (max-width: 992px) {
     h3 {
         margin: 0;

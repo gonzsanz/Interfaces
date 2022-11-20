@@ -13,8 +13,8 @@ h3 {
 }
 
 /*------------------------ MEDIA QUERIES ------------------------ */
-/* TABLET */
 
+/* TABLET */
 @media all and (max-width: 992px) {
 
     h3 {
