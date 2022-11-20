@@ -40,7 +40,7 @@ iframe {
         font-family: 'Poppins';
         display: flex;
         font-size: 20px;
-        width: 6rem;
+        width: 10rem;
         height: 2rem;
         margin-bottom: 40px;
         margin-left: 6rem;
@@ -75,7 +75,7 @@ iframe {
 
     .boton {
         margin-left: 5rem;
-        width: 6rem;
+        width: 10rem;
         height: 2rem;
         padding: 6px;
     }
