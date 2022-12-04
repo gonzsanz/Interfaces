@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Dibujando con Canvas</h1>
+    </header>
+    <main>
+
+        <div class="texto">
+            <canvas id="mycanvas" width="200" height="240" style="border: 1px black solid; "></canvas>
+            <p>El elemento HTML canvas se puede utilizar para dibujar gráficos a través de secuencias de comandos
+                (por lo
+                general JavaScript ). Por ejemplo, puede usarse para dibujar gráficos, hacer composiciones de fotos o
+                incluso
+                realizar animaciones.
+                El elemento &lt;canvas&gt; no está soportado en navegadores viejos, pero están soportado en la mayoría
+                delas
+                versiones más recientes de los navegadores.
+                <br><br> Canvas permite dibujar en la página y actualizar dinámicamente estos dibujos, por medio de
+                scripts
+                y
+                atendiendo a las
+                acciones del usuario. Todo esto da unas posibilidades de uso tan grandes como las que disponemos con el
+                plugin de Flash,
+                en lo que respecta a renderización de contenidos dinámicos. Las aplicaciones pueden ser grandes como
+                podamos
+                imaginar,
+                desde juegos, efectos dinámicos en interfaces de usuario, editores de código, editores gráficos,
+                aplicaciones, efectos
+                3D, etc.
+            </p>
+        </div>
+        <div class="atributos">
+
+            <h3>Atributos</h3>
+            <p>
+                <b>width:</b>
+                La anchura del espacio de coordenadas en píxeles CSS. El valor predeterminado es 300.
+                <br>
+                <b>height</b>
+                La altura del espacio de coordenadas en píxeles CSS. El valor predeterminado es 150.
+            </p>
+        </div>
+        <div class="interes">
+            <p>Páginas de interés: <a
+                    href="https://developer.mozilla.org/es/docs/Web/HTML/Element/canvas#:~:text=El%20elemento%20HTML%20canvas%20(%3Ccanvas,fotos%20o%20incluso%20realizar%20animaciones.">Developer
+                    Mozilla</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        David González Sanz
+    </footer>
+</body>
+
+</html>
+
+<script>
+    const canvas = document.getElementById('mycanvas');
+    const ctx = canvas.getContext('2d');
+
+    ctx.lineWidth = 8;
+
+    const startx = 100;
+    const starty = 60;
+    ctx.strokeStyle = 'blue';
+    ctx.beginPath();
+    ctx.arc(startx, starty, 20, 0, 2 * Math.PI);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(startx, starty + 20);
+    ctx.lineTo(startx, starty + 100);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(startx, starty + 25);
+    ctx.lineTo(startx - 30, starty + 60);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(startx, starty + 25);
+    ctx.lineTo(startx + 30, starty + 60);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(startx, starty + 100);
+    ctx.lineTo(startx - 30, starty + 150);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(startx, starty + 100);
+    ctx.lineTo(startx + 30, starty + 150);
+    ctx.stroke();
+
+</script>
