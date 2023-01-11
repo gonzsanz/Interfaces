@@ -1,0 +1,35 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .texto {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+main .texto h3 {
+  animation: fadeIn 2s ease;
+  animation-fill-mode: forwards;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10vh;
+}
+main .texto img {
+  animation: fadeIn 2s ease;
+  animation-fill-mode: forwards;
+  width: 30rem;
+  margin: 0 20px;
+}/*# sourceMappingURL=style.css.map */

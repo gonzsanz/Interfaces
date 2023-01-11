@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <title>OnlyDreams</title>
+</head>
+
+<main>
+    <header>
+        <div class="izq">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo onlydrems"></a>
+            <h1>Only<span>Dreams</span></h1>
+        </div>
+        <div class="der">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#container">Contacto</a></li>
+                    <li><a href="./formulario.html">Formulario</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Formulario de recomendación</h1>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="recommendation">Recomendación:</label>
+            <textarea id="recommendation" name="recommendation" required></textarea>
+
+            <label for="rating">Puntuación:</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <div id="container">
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <p>Teléfono: 622358433</p>
+                <p>Email: onlydreams@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+
+</html>

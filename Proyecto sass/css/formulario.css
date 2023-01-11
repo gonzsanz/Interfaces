@@ -1,0 +1,54 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #add8e6;
+  margin: 0;
+}
+
+main {
+  background-color: #add8e6;
+}
+main h1 {
+  text-align: center;
+}
+main form {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+main form label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+main form input[type=text],
+main form input[type=email],
+main form input[type=number],
+main form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+main form input[type=submit] {
+  background-color: #00008B;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 90%;
+}
+main form input[type=submit]:hover {
+  background-color: #00008B;
+}/*# sourceMappingURL=formulario.css.map */

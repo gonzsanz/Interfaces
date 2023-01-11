@@ -1,0 +1,120 @@
+$colors: (
+    light-blue: #add8e6,
+    medium-blue: #87CEEB,
+    dark-blue: #00008B,
+    text: #333
+);
+
+@mixin hover {
+    &:hover {
+        color: map-get($colors, dark-blue);
+        transition: all 0.6s ease-out;
+    }
+}
+
+@function font-size($base-size: 1em, $sm-size: 0.9em) {
+    @return $base-size;
+}
+
+@function letter-spacing($base-size: 1em) {
+    @return $base-size/10;
+}
+
+@function margin($base-size: 20px) {
+    @return $base-size;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: font-size();
+    line-height: 1.6;
+    background-color: map-get($colors, light-blue);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: margin();
+    background-color: map-get($colors, medium-blue);
+
+    .izq {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        img {
+            width: 60px;
+            margin-right: margin();
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: letter-spacing(2em);
+
+            span {
+                color: map-get($colors, dark-blue);
+                font-style: italic;
+            }
+        }
+    }
+
+    .der {
+        nav {
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                list-style: none;
+                font-size: 20px;
+
+                li {
+                    margin-left: margin();
+
+                    a {
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-size: font-size(0.9em);
+                        letter-spacing: letter-spacing();
+                        font-weight: bold;
+                        text-decoration: none;
+                        @include hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: map-get($colors, medium-blue);
+    padding: margin();
+    text-align: center;
+
+    .col-md-4 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h5 {
+            font-size: font-size(1.2em);
+            text-transform: uppercase;
+            color: map-get($colors , dark-blue)
+        }
+
+        p {
+            margin: 0;
+        }
+
+    }
+}

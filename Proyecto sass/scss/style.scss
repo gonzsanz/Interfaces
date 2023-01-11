@@ -1,0 +1,55 @@
+// Variables
+$text-color: #333;
+
+// Mixins
+@mixin fullscreen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin animation-fadeIn {
+    animation: fadeIn 2s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+//Main
+main {
+    @include fullscreen;
+
+    .texto {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        h3 {
+            @include animation-fadeIn;
+            color: $text-color;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 10vh;
+
+        }
+
+        img {
+            @include animation-fadeIn();
+            width: 30rem;
+            margin: 0 20px;
+
+        }
+    }
+}
