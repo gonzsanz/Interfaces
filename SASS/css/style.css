@@ -1,0 +1,46 @@
+body {
+  background-color: antiquewhite;
+  margin: 20px 100px;
+  padding: 4px;
+  border: 3px solid red;
+}
+body h1 {
+  color: #00f;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: "Cascadia Code PL";
+  font-size: 30px;
+}
+
+.texto {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+}
+.texto p {
+  font-size: 20px;
+  background-color: #0f0;
+}
+.texto p:hover {
+  color: #0f0;
+  background-color: black;
+}
+.texto button {
+  background-color: #0f0;
+  color: #00f;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+.texto button:active {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.texto button:hover {
+  background-color: #00f;
+}/*# sourceMappingURL=style.css.map */

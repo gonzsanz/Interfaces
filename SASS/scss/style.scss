@@ -1,0 +1,77 @@
+$colors: (
+    primario: #f00,
+    secundario: #0f0,
+    terciario: #00f,
+);
+
+body {
+    background-color: antiquewhite;
+    margin: 20px 100px;
+    padding: 4px;
+    border: 3px solid red;
+
+    h1 {
+        color: map-get($colors, terciario);
+
+        text : {
+            align: center;
+            transform: uppercase;
+            decoration: underline;
+        }
+
+        font: {
+            family: "Cascadia Code PL";
+            size: 30px;
+        }
+    }
+
+}
+
+.texto {
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+    font: {
+        family: "Roboto";
+    }
+
+    p {
+        font-size: 20px;
+        background-color: map-get($colors, secundario);
+
+        &:hover {
+            color: map-get($colors, secundario);
+            background-color: black;
+        }
+    }
+
+    button {
+        background-color: map-get($colors, secundario);
+        color: map-get($colors, terciario);
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        width: 200px;
+        height: 50px;
+
+
+
+        &:active {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        &:hover {
+            background-color: map-get($colors, terciario);
+        }
+    }
+
+    // funcion para cambiar el color del boton
+    @function cambiarColor($color) {
+        @return map-get($colors, $color);
+    }
+
+
+}
